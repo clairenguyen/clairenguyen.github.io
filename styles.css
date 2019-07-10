@@ -1,72 +1,93 @@
 body {
+    background-color: tan;
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family: 'Roboto', sans-serif;
 }
 
 nav {
+    background-color: darkcyan;
     padding: 10px;
-    background-color: #2b195c;
     position: fixed;
-    width: 100%;
-
+    width: 100%; /* view width = vw */
 }
 
 nav a {
-    text-decoration:  none;
-    /* text-decoration-color: aquamarine; the underline color if you want underline */
-    color: #c8c0f3;
-    padding: 14px 20px;
-    /* text-align: center; */
+    text-decoration: none;
+    padding: 10px 15px;
+    /*
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    */
+    font-size: 1.5em;
+    color:white;
+    font-family: 'Mountains of Christmas', cursive;
 }
-
-nav a:hover {
-    color: #ecd344;
-}
-
 
 header {
-    background-image: url("https://accuweather.brightspotcdn.com/dims4/default/4610650/2147483647/resize/590x/quality/90/?url=http%3A%2F%2Faccuweather-bsp.s3.amazonaws.com%2F8a%2Fb1%2Ff2c7c73d422fa7c5163f98b453a0%2Flos-angeles.jpg");
-    background-repeat: no-repeat; 
-    background-size: cover;
-    background-position: top; 
-    box-shadow: inset 0 0 0 1000px rgba(255, 255, 170, 0.5);
-    color: rgb(51, 44, 141);
     padding-top: 38px;
+    background-image: url("https://i.pinimg.com/originals/6d/ad/d9/6dadd96dc66deaf408b0967c6fd786cf.jpg");
+    background-size: cover;
+    background-position: bottom;
 }
 
 .slide {
     height: 75vh;
-    box-sizing: border-box;
-    display:  flex;
+    background-color: pink;
+    border: 1px solid #ffffff;
+    margin: 10px;
+    padding: 20px;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
-
-
-#about {
-    background-color: rgb(255, 249, 158);
-    padding: 20px;
-    margin: 0;
+div h1 {
+    color: purple;
+    font-size: 2.5em;
 }
 
-#my-profile-image {
+#about {
+    background-color: #5a1b74;
+}
+
+#my-profile-pic {
     background-image: url("https://profilepicturesdp.com/wp-content/uploads/2018/07/profile-picture-facebook-funny-11.jpg");
-    background-size: cover;
-    background-position: bottom;
     background-repeat: no-repeat;
-    width: 30%;
-    height:100%;
-    display: inline-block;
+    background-size: cover;
+    height: 100%;
+    width: 40%;
 }
 
 #my-profile-details {
-    width:  60%;
+    width: 60%;
     height: 100%;
-    background-color: rgb(160, 161, 105);
-    padding: 20px;
-    box-sizing: border-box;
+    background-color: red;
 }
+
+.post-wrapper {
+    width: 100%;
+    background-color: #ffffff;
+    border: 2px dotted #5a1b74;
+    /* height:200px; */
+    /* overflow-y: scroll; */
+    padding: 20px;
+}
+
+#blog {
+    flex-direction: column;
+    height: auto;
+}
+
+.date {
+    float: right;
+    font-style: italic;
+    font-weight: 400;
+}
+
+
+
+
 
